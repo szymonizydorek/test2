@@ -1,3 +1,6 @@
+ {% load static %}
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,10 +46,10 @@
 	<!-- Introduction -->
 	<div class="intro section" id="about">
 		<div class="container">
-			<p>Hi, I’m Draco the Dragon</p>
+			<p>Hi, I’m Simon</p>
 			<div class="units-row units-split wrap">
 				<div class="unit-20">
-					<img src="img/ava.jpg" alt="Avatar">
+					<img src="{% static 'website/img/ava.jpg' %}" alt="Avatar">
 				</div>
 				<div class="unit-80">
 					<h1>I live in<br><span id="typed"></span></h1>
