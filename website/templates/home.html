@@ -10,16 +10,16 @@
     <meta name="description" content="Draco is free PSD &amp; HTML template by @afnizarnur">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/kube.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/custom.min.css" />
-    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href=" {% static 'website/css/kube.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/css/custom.min.css' %}" />
+    <link rel="shortcut icon" href="{% static 'website/img/favicon.png' %}" />
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<style>
 		.intro h1:before {
 			/* Edit this with your name or anything else */
-			content: 'DRACO';
+			content: 'Simon';
 		}
 	</style>
 </head>
@@ -49,13 +49,13 @@
 			<p>Hi, I’m Simon</p>
 			<div class="units-row units-split wrap">
 				<div class="unit-20">
-					<img src="{% static 'website/img/ava.jpg' %}" alt="Avatar">
+					<img src="{% static 'website/img/zdjecie.jpg' %}" alt="Avatar">
 				</div>
 				<div class="unit-80">
-					<h1>I live in<br><span id="typed"></span></h1>
+					<h1>I worked in<br><span id="typed"></span></h1>
 				</div>
 				<p>
-					Draco is a constellation in the far northern sky. Its name is Latin for dragon. Draco is circumpolar (that is, never setting) for many observers in the northern hemisphere. It was one of the 48 constellations listed by the 2nd century astronomer Ptolemy.
+					Hello, my name is Simon and I am Warsaw-based technology enthusiast. I am looking for the new challenges in the field of telecommunication enginering, management or sales. Please see the following CV to validate my candidature.
 				</p>
 			</div>
 		</div>
@@ -66,19 +66,19 @@
 		<div class="container">
 			<h1>Work<br>Experiences</h1>
 			<ul class="work-list">
-				<li>2014-2015</li>
-				<li><a href="#">PT Traveloka Indonesia</a></li>
-				<li>Web Designer</li>
+				<li>2019-Currently</li>
+				<li><a href="#">IS-Wireless</a></li>
+				<li>Product Engineer</li>
+			</ul>
+			<ul class="work-list">
+				<li>2019</li>
+				<li><a href="#">Immerisve Technologies</a></li>
+				<li>5G Project Manager and Edge Computing</li>
 			</ul>
 			<ul class="work-list">
 				<li>2014-2015</li>
-				<li><a href="#">Wego</a></li>
-				<li>UI/UX Designer</li>
-			</ul>
-			<ul class="work-list">
-				<li>2014-2015</li>
-				<li><a href="#">Garuda Indonesia</a></li>
-				<li>System Designer</li>
+				<li><a href="#">Tieto</a></li>
+				<li>Junior Tester</li>
 			</ul>
 		</div>
 	</div>
@@ -128,7 +128,7 @@
 	<!-- Quote -->
 	<div class="quote">
 		<div class="container text-centered">
-			<h1>fight against the ugliness.</h1>
+			<h1>Graduated from the top engingeering University in Europe.</h1>
 		</div>
 	</div>
 
@@ -136,7 +136,7 @@
 		<div class="container">
 			<div class="units-row">
 			    <div class="unit-50">
-			    	<p>Handcrafted by Afnizar Nur Ghifari</p>
+			    	
 			    </div>
 			    <div class="unit-50">
 					<ul class="social list-flat right">
@@ -151,14 +151,14 @@
 	</footer>
 
 	<!-- Javascript -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/typed.min.js"></script>
-    <script src="js/kube.min.js"></script>
-    <script src="js/site.js"></script>
+	<script src=" {% static 'website/js/jquery.min.js'%}"></script>
+	<script src=" {% static 'website/js/typed.min.js'%}"></script>
+    <script src=" {% static 'website/js/kube.min.js' %}"></script>
+    <script src=" {% static 'website/js/site.js' %}"></script>
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
 		// Change to edit type effect
-		strings: ["far northern sky", "your galaxy", "everywhere"],
+		strings: ["Poland", "Denmark", "France", "China"],
 
 		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
